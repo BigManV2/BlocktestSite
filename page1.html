@@ -100,13 +100,7 @@
 
     <script>
         function checkPassword() {
-            const passwordInput = document.getElementById('passwordInput').value;
-            fetch('c6vn68234tv1.txt').then(response => response.text()).then(data => {
-                const passwords = data.split('\n').map(p => p.trim());
-                if (passwords.includes(passwordInput)) {
-                    document.cookie = 'accessGranted=true; path=/';
-                    alert('you wont need to re-login after you close the tab');
-                    window.location.href = 'page2.html';
+            const passwordInput = "2lazy4discord";
                 } else {
                     alert('Incorrect password.');
                 }
